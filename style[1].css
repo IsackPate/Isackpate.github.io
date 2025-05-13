@@ -1,0 +1,41 @@
+
+body {
+  font-family: sans-serif;
+  background-color: #fdfdfd;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+header {
+  background: linear-gradient(to right, gold, blue);
+  padding: 1rem;
+  color: white;
+}
+nav a {
+  margin: 0 1rem;
+  color: white;
+  text-decoration: none;
+}
+section {
+  padding: 2rem;
+}
+form input, form textarea {
+  display: block;
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  width: 100%;
+  max-width: 400px;
+}
+button {
+  padding: 0.5rem 1rem;
+  background: gold;
+  border: none;
+  color: black;
+  cursor: pointer;
+}
+footer {
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
