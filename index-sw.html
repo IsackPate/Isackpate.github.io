@@ -1,38 +1,42 @@
 <!DOCTYPE html>
 <html lang="sw">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Isack Pate General Investment</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Isack Pate - Faili na Bidhaa</title>
+  <link rel="stylesheet" href="css/modern-style.css" />
+  <script src="js/script.js" defer></script>
 </head>
 <body>
+  <header>
+    <img src="assets/images/logo.png" alt="Isack Pate Logo" class="logo">
+    <a href="index-sw.html" class="home-button">Nyumbani</a>
+    <select class="lang-switcher" onchange="switchLanguage(this.value)">
+      <option value="sw" selected>Kiswahili</option>
+      <option value="en">English</option>
+    </select>
+  </header>
 
-<header>
-  <div>Isack Pate General Investment</div>
-  <nav>
-    <a href="index-sw.html">Nyumbani</a>
-    <a href="about-sw.html">Kuhusu</a>
-    <a href="service-sw.html">Huduma Zetu</a>
-    <a href="contact-sw.html">Wasiliana Nasi</a>
-  </nav>
-  <div class="language-switcher"><a href="index.html">EN</a></div>
-</header>
-<section>
-  <h1>Karibu Isack Pate</h1>
-  <p>Tunauza viatu vya mtumba vya ubora.</p>
-  <div class="products">
-    <div class="product">
-      <img src="https://via.placeholder.com/200" alt="Bidhaa 1">
-      <h3>Bidhaa 1</h3>
-      <p>Bei: TZS 20,000</p>
-      <a class="buy-btn" href="https://wa.me/255683077079?text=Nataka%20kununua%20Bidhaa%201">Nunua</a>
-    </div>
-    <!-- Ongeza bidhaa zaidi kama inahitajika -->
-  </div>
-</section>
-<a class="whatsapp-btn" href="https://wa.me/255683077079">Nunua kwa WhatsApp</a>
-<footer>&copy; 2025 Isack Pate General Investment</footer>
+  <main>
+    <section id="form">
+      <h2>Ongeza Bidhaa Mpya</h2>
+      <form id="addProductForm">
+        <input type="text" id="productName" placeholder="Jina la bidhaa" required>
+        <input type="number" id="productPrice" placeholder="Bei kwa TZS" required>
+        <input type="url" id="productImage" placeholder="Link ya picha" required>
+        <button type="submit">Ongeza Bidhaa</button>
+      </form>
+    </section>
+    <section id="products">
+      <h2>Bidhaa Zetu</h2>
+      <div class="product-list" id="productList">
+        <!-- Bidhaa zitaongezwa hapa na JavaScript -->
+      </div>
+    </section>
+  </main>
 
+  <footer>
+    <p>&copy; 2025 Isack Pate General Investment</p>
+  </footer>
 </body>
 </html>
