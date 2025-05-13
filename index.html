@@ -1,51 +1,69 @@
 
 <!DOCTYPE html>
-<html lang="sw">
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Isack Pate General Investment</title>
-  <link rel="stylesheet" href="modern-style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Isack Pate General Investment</title>
+    <link rel="stylesheet" href="css/modern-style.css" />
+    <script src="js/script.js" defer></script>
 </head>
 <body>
-  <header>
-    <img src="logo.png" alt="Isack Pate Logo" class="logo" />
-    <h1>Isack Pate General Investment</h1>
-  </header>
+    <header>
+        <div class="logo">
+            <img src="assets/images/logo.png" alt="Logo" />
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Our Services</a></li>
+                <li><a href="#products">Products</a></li>
+                <li>
+                    <select id="languageSwitcher">
+                        <option value="en">English</option>
+                        <option value="sw">Kiswahili</option>
+                    </select>
+                </li>
+            </ul>
+        </nav>
+    </header>
 
-  <div class="slider">
-    <img src="https://images.unsplash.com/photo-1560072810-1cffb09faf0f?w=1080" alt="Slider Image" />
-  </div>
+    <section id="home">
+        <h1>Welcome to Isack Pate General Investment</h1>
+        <p>Explore quality used shoes.</p>
+    </section>
 
-  <div class="products" id="products">
-    <div class="product">
-      <h3>Raba Nyeupe</h3>
-      <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=300" alt="Raba Nyeupe">
-      <p>Bei: TZS 30,000</p>
-      <a href="https://wa.me/255683077079?text=Naomba%20Raba%20Nyeupe" class="buy-button" target="_blank">Buy on WhatsApp</a>
-    </div>
-    <div class="product">
-      <h3>Viatu vya Ngozi vya Kawaida</h3>
-      <img src="https://images.unsplash.com/photo-1611078489935-1c6c7eeea4e5?w=300" alt="Viatu vya Ngozi">
-      <p>Bei: TZS 35,000</p>
-      <a href="https://wa.me/255683077079?text=Naomba%20Viatu%20vya%20Ngozi" class="buy-button" target="_blank">Buy on WhatsApp</a>
-    </div>
-    <div class="product">
-      <h3>Viatu vya Ofisini vya Wanaume</h3>
-      <img src="https://images.unsplash.com/photo-1519744792095-2f2205e87b6f?w=300" alt="Viatu vya Ofisini">
-      <p>Bei: TZS 40,000</p>
-      <a href="https://wa.me/255683077079?text=Naomba%20Viatu%20vya%20Ofisini" class="buy-button" target="_blank">Buy on WhatsApp</a>
-    </div>
-    <div class="product">
-      <h3>Viatu vya Mitumba vya Wanawake</h3>
-      <img src="https://images.unsplash.com/photo-1528701800489-20be3c2c45cb?w=300" alt="Viatu vya Wanawake">
-      <p>Bei: TZS 25,000</p>
-      <a href="https://wa.me/255683077079?text=Naomba%20Viatu%20vya%20Mitumba%20Wanawake" class="buy-button" target="_blank">Buy on WhatsApp</a>
-    </div>
-  </div>
+    <section id="about">
+        <h2>About Us</h2>
+        <p>We sell high-quality used shoes at affordable prices. Your feet deserve the best.</p>
+    </section>
 
-  <footer>
-    <p>&copy; 2025 Isack Pate General Investment. Wasiliana nasi kwa 0683 077 079</p>
-  </footer>
+    <section id="services">
+        <h2>Our Services</h2>
+        <p>We provide curated selections, WhatsApp ordering, and flexible delivery options.</p>
+    </section>
+
+    <section id="products" class="slider">
+        <h2>Our Products</h2>
+        <div class="product-slider" id="productSlider"></div>
+    </section>
+
+    <section id="addProduct">
+        <h2>Add New Product</h2>
+        <form id="productForm">
+            <input type="text" placeholder="Product Name" name="name" required />
+            <input type="number" placeholder="Price (TZS)" name="price" required />
+            <input type="url" placeholder="Image URL" name="image" required />
+            <input type="url" placeholder="WhatsApp Link" name="whatsapp" required />
+            <button type="submit">Add Product</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>Contact: +255 683 077 079 | isackpate@gmail.com</p>
+        <p>Follow us: Facebook: Isack Raphael Achimpate | Instagram: Pate_15</p>
+        <p>&copy; 2025 Isack Pate General Investment</p>
+    </footer>
 </body>
 </html>
