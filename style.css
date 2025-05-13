@@ -1,83 +1,11 @@
 
-/* Improved styling for Isack Pate General Investment */
-body {
-    font-family: 'Poppins', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f5f7fa;
-    color: #222;
-}
-
-header, footer {
-    background-color: #003366; /* Dark Blue */
-    color: white;
-    padding: 15px;
-    text-align: center;
-}
-
-h1, h2, h3 {
-    color: #003366;
-}
-
-a {
-    color: #0066cc;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-nav a {
-    margin: 0 10px;
-    color: white;
-    font-weight: bold;
-}
-
-.product {
-    border: 1px solid #ddd;
-    padding: 15px;
-    border-radius: 8px;
-    background-color: white;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    margin-bottom: 20px;
-}
-
-button, .buy-button {
-    background-color: #FFD700; /* Gold */
-    color: #003366;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    font-weight: bold;
-    cursor: pointer;
-}
-
-button:hover, .buy-button:hover {
-    background-color: #e6c200;
-}
-
-input[type="text"], textarea {
-    width: 100%;
-    padding: 10px;
-    margin: 8px 0;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-.container {
-    width: 90%;
-    max-width: 1200px;
-    margin: auto;
-}
-
-@media (max-width: 768px) {
-    nav a {
-        display: block;
-        margin: 10px 0;
-    }
-
-    .product {
-        margin-bottom: 30px;
-    }
-}
+body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f9f9f9; }
+header { background-color: #002f6c; color: white; padding: 10px 20px; display: flex; justify-content: space-between; align-items: center; }
+nav a { color: white; margin: 0 10px; text-decoration: none; }
+nav a:hover { text-decoration: underline; }
+.language-switcher a { color: #ffd700; margin-left: 10px; text-decoration: none; }
+section { padding: 20px; }
+.product { border: 1px solid #ddd; padding: 10px; margin: 10px; display: inline-block; width: calc(33% - 40px); vertical-align: top; background: white; }
+.product img { max-width: 100%; height: auto; }
+footer { background-color: #ddd; padding: 10px 20px; text-align: center; }
+.whatsapp-btn { position: fixed; bottom: 20px; right: 20px; background-color: #25D366; color: white; padding: 10px 15px; border-radius: 50px; text-decoration: none; font-weight: bold; }
