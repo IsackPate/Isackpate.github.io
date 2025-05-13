@@ -4,48 +4,67 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Isack Pate General Investment</title>
-  <link rel="stylesheet" href="modern-style.css" />
+  <title>Isack Pate - Mguu wako Heshima yako</title>
+  <link rel="stylesheet" href="modern-style.css"/>
 </head>
 <body>
   <header>
-    <img src="logo.png" alt="Isack Pate Logo" class="logo" />
-    <h1>Isack Pate General Investment</h1>
+    <img src="logo.png" alt="Isack Pate Logo" class="logo"/>
+    <nav>
+      <ul>
+        <li><a href="#about">Kuhusu</a></li>
+        <li><a href="#services">Huduma Zetu</a></li>
+        <li><a href="#products">Bidhaa</a></li>
+        <li><a href="#contact">Wasiliana Nasi</a></li>
+        <li>
+          <select id="languageSwitcher" onchange="switchLanguage()">
+            <option value="sw">Swahili</option>
+            <option value="en">English</option>
+          </select>
+        </li>
+      </ul>
+    </nav>
   </header>
 
-  <div class="slider">
-    <img src="https://images.unsplash.com/photo-1560072810-1cffb09faf0f?w=1080" alt="Slider Image" />
-  </div>
+  <section id="about">
+    <h2>Kuhusu Sisi</h2>
+    <p>Tunauza viatu vya mitumba kwa ubora wa hali ya juu, kwa ajili ya wakazi wa Mtwara na Tanzania kwa ujumla.</p>
+  </section>
 
-  <div class="products" id="products">
+  <section id="services">
+    <h2>Huduma Zetu</h2>
+    <ul>
+      <li>Uuzaji wa viatu vya mitumba</li>
+      <li>Ushauri wa mitindo</li>
+      <li>Kusafirisha bidhaa ndani ya Mtwara</li>
+    </ul>
+  </section>
+
+  <section id="products" class="products">
+    <h2>Bidhaa</h2>
+
     <div class="product">
       <h3>Raba Nyeupe</h3>
-      <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=300" alt="Raba Nyeupe">
+      <img src="https://images.unsplash.com/photo-1603808033192-082d6919d3c4?w=300" alt="Raba Nyeupe"/>
       <p>Bei: TZS 30,000</p>
       <a href="https://wa.me/255683077079?text=Naomba%20Raba%20Nyeupe" class="buy-button" target="_blank">Buy on WhatsApp</a>
     </div>
-    <div class="product">
-      <h3>Viatu vya Ngozi vya Kawaida</h3>
-      <img src="https://images.unsplash.com/photo-1611078489935-1c6c7eeea4e5?w=300" alt="Viatu vya Ngozi">
-      <p>Bei: TZS 35,000</p>
-      <a href="https://wa.me/255683077079?text=Naomba%20Viatu%20vya%20Ngozi" class="buy-button" target="_blank">Buy on WhatsApp</a>
-    </div>
-    <div class="product">
-      <h3>Viatu vya Ofisini vya Wanaume</h3>
-      <img src="https://images.unsplash.com/photo-1519744792095-2f2205e87b6f?w=300" alt="Viatu vya Ofisini">
-      <p>Bei: TZS 40,000</p>
-      <a href="https://wa.me/255683077079?text=Naomba%20Viatu%20vya%20Ofisini" class="buy-button" target="_blank">Buy on WhatsApp</a>
-    </div>
-    <div class="product">
-      <h3>Viatu vya Mitumba vya Wanawake</h3>
-      <img src="https://images.unsplash.com/photo-1528701800489-20be3c2c45cb?w=300" alt="Viatu vya Wanawake">
-      <p>Bei: TZS 25,000</p>
-      <a href="https://wa.me/255683077079?text=Naomba%20Viatu%20vya%20Mitumba%20Wanawake" class="buy-button" target="_blank">Buy on WhatsApp</a>
-    </div>
-  </div>
 
-  <footer>
-    <p>&copy; 2025 Isack Pate General Investment. Wasiliana nasi kwa 0683 077 079</p>
+    <div id="product-list"></div>
+
+    <h3>Ongeza Bidhaa Mpya</h3>
+    <form id="productForm">
+      <input type="text" id="productName" placeholder="Jina la bidhaa" required/><br>
+      <input type="text" id="productPrice" placeholder="Bei ya bidhaa" required/><br>
+      <input type="text" id="productImage" placeholder="Link ya picha (URL)" required/><br>
+      <button type="submit">Ongeza Bidhaa</button>
+    </form>
+  </section>
+
+  <footer id="contact">
+    <p>Copyright © 2025 Isack Pate. Wasiliana nasi: <a href="mailto:isackpate@gmail.com">isackpate@gmail.com</a></p>
   </footer>
+
+  <script src="js/script.js"></script>
 </body>
 </html>
