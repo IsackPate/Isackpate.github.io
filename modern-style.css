@@ -1,0 +1,52 @@
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f5f7fa;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+header {
+  background-color: #003366;
+  color: #fff;
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+header img {
+  height: 60px;
+}
+
+nav a {
+  color: gold;
+  margin: 0 1rem;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.buy-button {
+  background-color: #003366;
+  color: gold;
+  padding: 10px 15px;
+  text-decoration: none;
+  border-radius: 8px;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.slider {
+  display: flex;
+  overflow-x: auto;
+  gap: 1rem;
+  scroll-snap-type: x mandatory;
+  padding: 1rem;
+}
+
+.slider img {
+  height: 200px;
+  scroll-snap-align: start;
+  border-radius: 10px;
+}
