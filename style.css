@@ -1,19 +1,11 @@
 
-* { margin: 0; padding: 0; box-sizing: border-box; }
-body { font-family: 'Segoe UI', Tahoma, Geneva, sans-serif; background: #f9fbff; color: #333; }
-header { display: flex; justify-content: space-between; align-items: center; padding: 1em 2em; background: #004aad; }
-header img { height: 50px; }
-nav ul { list-style: none; display: flex; gap: 1em; }
-nav a { color: white; text-decoration: none; font-weight: bold; }
-.hero { text-align: center; padding: 2em; background: url('assets/images/banner.jpg') center/cover no-repeat; position: relative; height: 400px; }
-.hero-text { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: white; background: rgba(0,0,0,0.5); padding: 1em 2em; border-radius: 10px; }
-.products { padding: 2em; display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2em; }
-.product-item { background: white; padding: 1em; border-radius: 10px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); text-align: center; }
-.product-item img { width: 100%; border-radius: 5px; }
-.btn { display: inline-block; margin-top: 0.5em; padding: 0.5em 1em; background: gold; color: #004aad; text-decoration: none; font-weight: bold; border-radius:5px; }
-#comments { padding: 2em; background: #eef2f5; }
-#comments ul { list-style: none; margin-bottom: 1em; }
-#comments li { margin-bottom: 0.5em; }
-#comments input, #comments textarea { width: 100%; padding: 0.5em; margin-bottom: 0.5em; }
-#comments button { width: 100%; }
-footer { padding: 1em; background: #004aad; color: white; text-align: center; }
+body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f9f9f9; }
+header { background-color: #002f6c; color: white; padding: 10px 20px; display: flex; justify-content: space-between; align-items: center; }
+nav a { color: white; margin: 0 10px; text-decoration: none; }
+nav a:hover { text-decoration: underline; }
+.language-switcher a { color: #ffd700; margin-left: 10px; text-decoration: none; }
+section { padding: 20px; }
+.product { border: 1px solid #ddd; padding: 10px; margin: 10px; display: inline-block; width: calc(33% - 40px); vertical-align: top; background: white; }
+.product img { max-width: 100%; height: auto; }
+footer { background-color: #ddd; padding: 10px 20px; text-align: center; }
+.whatsapp-btn { position: fixed; bottom: 20px; right: 20px; background-color: #25D366; color: white; padding: 10px 15px; border-radius: 50px; text-decoration: none; font-weight: bold; }

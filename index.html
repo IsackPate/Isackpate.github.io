@@ -1,75 +1,43 @@
-
 <!DOCTYPE html>
-<html lang="sw">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Isack Pate General Investment</title>
-    <link rel="stylesheet" href="assets/css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Isack Pate General Investment</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <img src="assets/images/logo.png" alt="Logo">
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#products">Products/Bidhaa</a></li>
-                <li><a href="#cart">Cart/Kikapu</a></li>
-                <li><a href="javascript:buy('Bidhaa')">Buy/Nununua</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <section class="hero">
-        <div class="hero-text">
-            <h1>Welcome / Karibu</h1>
-            <p>Explore Our Quality Used Shoes / Gundua Viatu vyetu Bora</p>
-        </div>
-    </section>
 
-    <section id="products" class="products">
+<header style="display: flex; align-items: center; gap: 10px;">
+  <img src="logo.png" alt="Isack Pate Logo" style="height: 60px;">
+  <h1 style="color: #002366;">Isack Pate General Investment</h1>
+</header>
 
-        <div class="product-item">
-            <img src="assets/images/product1.jpg" alt="Kiatu Bora">
-            <h3>Kiatu Bora</h3>
-            <p>25,000 TZS</p>
-            <a href="javascript:buy('Kiatu Bora')" class="btn">Buy/Nununua</a>
-        </div>
-    
-        <div class="product-item">
-            <img src="assets/images/product2.jpg" alt="Kiatu Kingine">
-            <h3>Kiatu Kingine</h3>
-            <p>30,000 TZS</p>
-            <a href="javascript:buy('Kiatu Kingine')" class="btn">Buy/Nununua</a>
-        </div>
-    
-        <div class="product-item">
-            <img src="assets/images/product3.jpg" alt="Kiatu Kipya">
-            <h3>Kiatu Kipya</h3>
-            <p>35,000 TZS</p>
-            <a href="javascript:buy('Kiatu Kipya')" class="btn">Buy/Nununua</a>
-        </div>
-    
-    </section>
+  <div>Isack Pate General Investment</div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="service.html">Our Service</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+  <div class="language-switcher"><a href="index-sw.html">SW</a></div>
+</header>
+<section>
+  <h1>Welcome to Isack Pate</h1>
+  <p>We sell quality second-hand shoes.</p>
+  <div class="products">
+    <div class="product">
+      <img src="https://via.placeholder.com/200" alt="Product 1">
+      <h3>Product 1</h3>
+      <p>Price: TZS 20,000</p>
+      <a class="buy-btn" href="https://wa.me/255683077079?text=I%20want%20to%20buy%20Product%201">Buy</a>
+    </div>
+    <!-- Add more products as needed -->
+  </div>
+</section>
+<a class="whatsapp-btn" href="https://wa.me/255683077079">Buy via WhatsApp</a>
+<footer>&copy; 2025 Isack Pate General Investment</footer>
 
-    <section id="comments">
-        <h2>Maoni / Comments</h2>
-        <ul>
-            <li><strong>Amina:</strong> "Viatu ni nzuri sana!"</li>
-            <li><strong>John:</strong> "Great quality shoes."</li>
-        </ul>
-        <form action="#" method="post">
-            <input type="text" name="name" placeholder="Jina/Name" required>
-            <textarea name="comment" placeholder="Maoni/Comment" required></textarea>
-            <button type="submit" class="btn">Submit/Tuma</button>
-        </form>
-    </section>
-
-    <footer>
-        <p>Contact/Mawasiliano: 0683 077 079 | isackpate@gmail.com</p>
-        <p>&copy; 2025 Isack Pate General Investment</p>
-    </footer>
-
-    <script src="assets/js/script.js"></script>
 </body>
 </html>
