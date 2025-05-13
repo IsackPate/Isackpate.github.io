@@ -1,92 +1,61 @@
 
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #f5f7fa;
+  font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
+  background: #f4f4f4;
   color: #333;
 }
-
 header {
-  background-color: #003366;
-  color: #fff;
-  padding: 1rem 2rem;
-  display: flex;
-  align-items: center;
-  gap: 1rem;
+  background: gold;
+  padding: 10px;
+  text-align: center;
+  position: relative;
 }
-
-header img {
-  height: 60px;
+header .logo {
+  width: 80px;
+  position: absolute;
+  left: 10px;
+  top: 10px;
 }
-
-nav {
-  margin-left: auto;
-}
-
-nav a {
-  color: gold;
-  margin: 0 1rem;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.slider {
-  display: flex;
-  overflow-x: auto;
-  gap: 1rem;
-  scroll-snap-type: x mandatory;
-  padding: 1rem;
-}
-
 .slider img {
-  flex: 0 0 auto;
   width: 100%;
-  max-width: 300px;
-  height: auto;
-  scroll-snap-align: start;
-  border-radius: 10px;
+  max-height: 300px;
+  object-fit: cover;
 }
-
 .products {
   display: flex;
   flex-wrap: wrap;
-  gap: 1rem;
-  padding: 1rem;
   justify-content: center;
-}
-
-.product {
+  padding: 20px;
   background: white;
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  padding: 1rem;
-  width: 250px;
-  text-align: center;
-  box-shadow: 0 0 10px rgba(0,0,0,0.05);
 }
-
+.product {
+  background: #fff;
+  border: 1px solid #ddd;
+  margin: 10px;
+  padding: 10px;
+  width: 220px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  text-align: center;
+}
 .product img {
   width: 100%;
-  height: auto;
-  border-radius: 10px;
+  height: 200px;
+  object-fit: cover;
 }
-
 .buy-button {
-  background-color: #003366;
-  color: gold;
-  padding: 10px 15px;
-  text-decoration: none;
-  border-radius: 8px;
   display: inline-block;
   margin-top: 10px;
+  padding: 8px 12px;
+  background: blue;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
 }
-
 footer {
-  background-color: #003366;
-  color: white;
+  background: #222;
+  color: #fff;
   text-align: center;
-  padding: 1.5rem;
-  margin-top: 2rem;
-  font-size: 0.9rem;
+  padding: 20px;
 }
