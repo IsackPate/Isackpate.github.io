@@ -1,4 +1,9 @@
+function switchLanguage() {
+  const lang = document.getElementById("languageSwitcher").value;
+  alert("Lugha imebadilishwa kuwa: " + (lang === "sw" ? "Kiswahili" : "English"));
+}
 
-document.addEventListener("DOMContentLoaded", () => {
-  console.log("Isack Pate site loaded!");
-});
+function submitProduct(event) {
+  event.preventDefault();
+  alert("Bidhaa imeongezwa kwa mafanikio!");
+}
